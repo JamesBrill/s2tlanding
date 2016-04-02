@@ -17,7 +17,7 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
+  <div class="jumbotron vertical-center">
     <div class="container text-center">
         <h1>THE ONLINE MARKETPLACE WHERE BUYERS MEET SUPPLIERS</h1>
         <button id="get-started"
@@ -29,9 +29,27 @@
   </div>
 
   <div id="how-it-works" class="row">
-    <h1>How Send2Tender works...</h1>
-    <div class="col-sm-4">Submit your project online for free.</div>
-    <div class="col-sm-4">Suppliers nationwide quote on your project.</div>
-    <div class="col-sm-4">Select quotes based on prices, reviews and distance.</div>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs nav-justified">
+      <li role="presentation" class="active copy-tabs">
+        <a href="#buyer-copy" role="tab" data-toggle="tab">For Buyers</a>
+      </li>
+      <li role="presentation">
+        <a href="#supplier-copy" role="tab" data-toggle="tab">For Suppliers</a>
+      </li>
+    </ul>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="buyer-copy">
+        <h1>How Send2Tender works...</h1>
+        <div class="col-sm-4">Submit your project online for free.</div>
+        <div class="col-sm-4">Suppliers nationwide quote on your project.</div>
+        <div class="col-sm-4">Select quotes based on prices, reviews and distance.</div>
+      </div>
+      <div class="tab-pane fade" id="supplier-copy">
+        <h1>Supplier stuff</h1>
+      </div>
+    </div>
   </div>
 </body>

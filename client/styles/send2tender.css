@@ -48,8 +48,8 @@
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    color: #555555;
-    background-color: blue;
+    color: white;
+    background-color: green;
     border-radius: 10px 10px 0px 0px;
 }
 

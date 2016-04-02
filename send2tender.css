@@ -45,12 +45,14 @@
   padding-right: 10px;
 }
 
-.copy-tabs {
-  background-color: green;
-  border-color: green;
-  color: white;
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #555555;
+    background-color: blue;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.copy-tabs > a {
-  color: white;
+.copy-tab-content {
+  height: 500px;
 }

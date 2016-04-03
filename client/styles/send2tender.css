@@ -1,3 +1,7 @@
+.wrapper {
+  background-color: #f6f6f6;
+}
+
 .navbar {
     margin-bottom: 0;
 }
@@ -22,6 +26,11 @@
   align-items: center;
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 #get-started {
   background-color: green;
   border-color: green;
@@ -32,6 +41,10 @@
   background-color: green;
   border-color: green;
   color: white;
+}
+
+#how-it-works {
+  background-color: white;
 }
 
 .navbar .brand > img {
@@ -55,4 +68,71 @@
 
 .copy-tab-content {
   height: 500px;
+}
+
+.price-plan {
+  border-style: solid;
+  border-color: #dcdcdc;
+  border-width: 0px 3px 3px 3px;
+  height: 300px;
+  margin: 50px 0px 100px 0px;
+}
+
+.price-plan h3 {
+  padding-top: 50px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.price-plan h3::after {
+  border-bottom: 2px solid #dcdcdc;
+  content: " ";
+  display: block;
+  width: 65px;
+  margin: 14px auto 15px auto;
+}
+
+.price-plan::before {
+  height: 10px;
+  border-width: 10px;
+  content: " ";
+  border-bottom-style: solid;
+  display: block;
+  width: calc(100% + 6px);
+  margin: 0px -3px;
+}
+
+.price-plan-title {
+  margin-top: 50px;
+  font-weight: 800;
+}
+
+.price-plan-basic::before {
+  border-color: #b0e44f;
+}
+
+.price-plan-pro::before {
+  border-color: #6fda44;
+}
+
+.price-plan-platinum::before {
+  border-color: #37a000;
+}
+
+.price-plan-top {
+  background-color: white;
+  height: calc(50% - 5px);
+}
+
+.price-plan-bottom {
+  height: calc(50% - 5px);
+}
+
+.price-plan-font {
+  font-weight: 450;
+  font-size: 24px;
+}
+
+.text-centre {
+  text-align: center;
 }

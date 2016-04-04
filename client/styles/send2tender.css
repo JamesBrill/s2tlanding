@@ -53,16 +53,6 @@
   background-color: white;
 }
 
-#buyer-copy {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-#supplier-copy {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 .navbar .brand > img {
   max-height: 60px;
   overflow: visible;
@@ -94,16 +84,42 @@
   display: inline;
 }
 
+.copy-panel {
+  font-weight: 500;
+  font-size: 32px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copy-panel-left {
+  border-right: 3px solid #ccc;
+}
+
+.copy-panel-right {
+  border-left: 3px solid #ccc;
+}
+
+.copy-panel-outer-gray {
+  background-color: #f6f6f6;
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.copy-panel-outer-white {
+  background-color: white;
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .copy-tabs {
   margin-top: 50px;
 }
 
 .copy-tab {
   width: 200px;
-}
-
-.copy-tab-content {
-  height: 500px;
 }
 
 .price-plan {
@@ -171,4 +187,8 @@
 
 .text-centre {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }

@@ -94,6 +94,10 @@
   display: inline;
 }
 
+.copy-tabs {
+  margin-top: 50px;
+}
+
 .copy-tab {
   width: 200px;
 }

@@ -21,9 +21,8 @@
   <div class="jumbotron vertical-center">
     <div class="container text-center">
         <h1>THE ONLINE MARKETPLACE WHERE BUYERS MEET SUPPLIERS</h1>
-        <button id="get-started"
-                onclick="location.href='#how-it-works';"
-                class="btn btn-default text-center">
+        <button onclick="location.href='#how-it-works';"
+                class="btn btn-default text-center std-button">
           HOW IT WORKS
         </button>
     </div>
@@ -46,7 +45,7 @@
       </div>
 
       <!-- Tab content -->
-      <div class="tab-content">
+      <div class="tab-content container-fluid">
         <div class="tab-pane copy-tab-content fade in active" id="buyer-copy">
           <div class="row copy-panel-outer-white">
             <div class="col-sm-6 copy-panel-left copy-panel text-right">
@@ -100,7 +99,7 @@
               <span>Build your free online profile and show buyers what your business does best.</span>
             </div>
             <div class="col-sm-6 copy-panel">
-              <span>TBC</span>
+              <div id="supplier-copy-1"></div>
             </div>
           </div>
 
@@ -132,8 +131,21 @@
           <div class="price-plan price-plan-basic">
             <div class="price-plan-top">
               <h3 class="price-plan-font">Basic</h3>
+              <span>Browse the UK's tenders</span>
+              <span>Free</span>
             </div>
             <div class="price-plan-bottom">
+              <button class="show-basic btn btn-default std-button" onclick="$('#basic-features').toggle({ duration: 200 });">Learn more</button>
+              <div id="basic-features">
+                <ul>
+                  <li>Build your free online business profile and show the world what you do best</li>
+                  <li>Browse unlimited tenders</li>
+                  <li>Quote on tenders that suit your services best</li>
+                  <li>Basic gallery to showcase your work</li>
+                  <li>Quote on up to 5 tenders each month for free</li>
+                </ul>
+                <button onclick="location.href='#';" class="btn btn-default std-button">Sign up!</button>
+              </div>
             </div>
           </div>
         </div>

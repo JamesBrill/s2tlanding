@@ -108,64 +108,47 @@
   padding-right: 50px;
 }
 
-#supplier-copy-1 {
-  background: #000 url("/assets/images/supplier1.png") center center;
-  background-color: transparent;
+.copy-image {
   height: 400px;
   width: 100%;
-  max-width: 345px;
-  max-height: 300px;
   background-size: cover;
   overflow: hidden;
   margin: 0 auto;
+}
+
+#supplier-copy-1 {
+  background: #000 url("/assets/images/supplier1.png") center center;
+  background-color: transparent;
+  max-width: 345px;
+  max-height: 300px;
 }
 
 #supplier-copy-2 {
   background: #000 url("/assets/images/supplier2.png") center center;
   background-color: transparent;
-  height: 400px;
-  width: 100%;
   max-width: 500px;
   max-height: 300px;
-  background-size: cover;
-  overflow: hidden;
-  margin: 0 auto;
 }
 
 #supplier-copy-3 {
   background: #000 url("/assets/images/supplier3.png") center center;
   background-color: transparent;
-  height: 400px;
-  width: 100%;
   max-width: 321px;
   max-height: 300px;
-  background-size: cover;
-  overflow: hidden;
-  margin: 0 auto;
 }
 
 #buyer-copy-1 {
   background: #000 url("/assets/images/buyer1.png") center center;
   background-color: transparent;
-  height: 400px;
-  width: 100%;
   max-width: 400px;
   max-height: 270px;
-  background-size: cover;
-  overflow: hidden;
-  margin: 0 auto;
 }
 
 #buyer-copy-2 {
   background: #000 url("/assets/images/buyer2.png") center center;
   background-color: transparent;
-  height: 400px;
-  width: 100%;
   max-width: 500px;
   max-height: 300px;
-  background-size: cover;
-  overflow: hidden;
-  margin: 0 auto;
 }
 
 .copy-tabs {

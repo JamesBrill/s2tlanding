@@ -189,9 +189,11 @@
 </body>
 
 <template name="emailcollector">
-  <form onsubmit="ga('send', 'event', signupType, 'give-email', $('#email').val());
+  <form onsubmit="if ($('#email').val() != '' && $('#username').val() != '') {
+    ga('send', 'event', signupType, 'give-email', $('#email').val());
                   ga('send', 'event', signupType, 'give-email', $('#username').val());
-                  $('#thank-you').show();">
+                  $('#thank-you').show();
+                }">
     <div class="form-group">
       <label for="username">Name:</label>
       <input type="text" class="form-control" id="username" name="username">

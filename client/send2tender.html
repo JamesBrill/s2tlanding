@@ -21,7 +21,7 @@
   <div class="jumbotron vertical-center">
     <div class="container text-center">
         <h1>THE ONLINE MARKETPLACE WHERE BUYERS MEET SUPPLIERS</h1>
-        <button onclick="location.href='#how-it-works';"
+        <button onclick="$('.email-form').show(); location.href='#email-form-inner';"
                 class="btn btn-default text-center std-button">
           SIGN UP
         </button>
@@ -35,18 +35,18 @@
       <div class="nav-centre copy-tabs">
         <!-- Tabs -->
         <ul class="nav nav-pills">
-          <li role="presentation" class="active copy-tab">
-            <a href="#buyer-copy" role="tab" data-toggle="tab">For Buyers</a>
-          </li>
           <li role="presentation" class="copy-tab">
-            <a href="#supplier-copy" role="tab" data-toggle="tab">For Suppliers</a>
+            <a onclick="$('#price-plans').hide()" href="#buyer-copy" role="tab" data-toggle="tab">For Buyers</a>
+          </li>
+          <li role="presentation" class="active copy-tab">
+            <a onclick="$('#price-plans').show()" href="#supplier-copy" role="tab" data-toggle="tab">For Suppliers</a>
           </li>
         </ul>
       </div>
 
       <!-- Tab content -->
       <div class="tab-content container-fluid">
-        <div class="tab-pane copy-tab-content fade in active" id="buyer-copy">
+        <div class="tab-pane copy-tab-content fade" id="buyer-copy">
           <div class="row copy-panel-outer-white">
             <div class="col-sm-6 copy-panel-left copy-panel text-right">
               <span>No more searching for suitable suppliers, no more trawling through emails and paperwork to find your quotes.</span>
@@ -93,7 +93,7 @@
           </div>
         </div>
 
-        <div class="tab-pane copy-tab-content fade" id="supplier-copy">
+        <div class="tab-pane copy-tab-content fade in active" id="supplier-copy">
           <div class="row copy-panel-outer-white">
             <div class="col-sm-6 copy-panel-left copy-panel text-right">
               <span>Build your free online profile and show buyers what your business does best.</span>
@@ -128,7 +128,7 @@
       <div id="price-plans" class="row text-centre">
         <h2 class="price-plan-title">Discover the best plan for you</h2>
 
-        <div class="col-sm-6 test">
+        <div class="col-sm-6">
           <div class="price-plan price-plan-basic">
             <div class="price-plan-top">
               <h3 class="price-plan-font">Basic</h3>
@@ -136,21 +136,41 @@
               <span>Showcase your business in a basic profile</span>
               <span>Quote on up to 5 tenders each month</span>
             </div>
-            <button onclick="location.href='#';" class="btn btn-default std-button sign-up-button">Join for free</button>
+            <button onclick="$('.email-form').show(); location.href='#email-form-inner';" class="btn btn-default std-button sign-up-button">Join for free</button>
           </div>
         </div>
 
-        <div class="col-sm-6 test">
+        <div class="col-sm-6">
           <div class="price-plan price-plan-pro">
             <div class="price-plan-top">
               <h3 class="price-plan-font">Pro</h3>
               <span>All basic features plus...</span>
               <span>Unlimited quotes</span>
             </div>
-            <button onclick="location.href='#';" class="btn btn-default std-button sign-up-button">Join for £39 a month</button>
+            <button onclick="$('.email-form').show(); location.href='#email-form-inner';" class="btn btn-default std-button sign-up-button">Join for £39 a month</button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="email-form">
+    <h2 class="price-plan-title text-centre">Be the first to know when we launch</h2>
+    <h6 class="text-centre">We're still building Send2Tender - when we're done, we want you to be the first to join us</h6>
+    <div id="email-form-inner">
+      <form>
+        <div class="form-group">
+          <label for="username">Name:</label>
+          <input type="text" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="text-centre">
+          <button type="submit" class="btn btn-default std-button send-button">Send</button>
+        </div>
+      </form>
     </div>
   </div>
 </body>

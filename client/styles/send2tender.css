@@ -240,3 +240,19 @@
 .text-right {
   text-align: right;
 }
+
+.email-form {
+  height: 400px;
+  display: none;
+}
+
+#email-form-inner {
+  padding-left: 20%;
+  padding-right: 20%;
+  min-width: 300px;
+}
+
+.send-button {
+  margin-left: auto;
+  margin-right: auto;
+}

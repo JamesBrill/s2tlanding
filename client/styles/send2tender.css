@@ -159,6 +159,28 @@
   max-height: 300px;
 }
 
+#buyer-copy-3 {
+  background: #000 url("/assets/images/buyer3.png") center center;
+  background-color: transparent;
+  max-width: 302px;
+  max-height: 300px;
+}
+
+#buyer-copy-4 {
+  background: #000 url("/assets/images/buyer4.png") center center;
+  background-color: transparent;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#buyer-copy-5 {
+  background: #000 url("/assets/images/buyer5.png") center center;
+  background-color: transparent;
+  background-size: cover;
+  max-width: 400px;
+  max-height: 300px;
+}
+
 .copy-tabs {
   margin-top: 50px;
 }

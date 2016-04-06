@@ -158,19 +158,23 @@
     <h2 class="price-plan-title text-centre">Be the first to know when we launch</h2>
     <h6 class="text-centre">We're still building Send2Tender - when we're done, we want you to be the first to join us</h6>
     <div id="email-form-inner">
-      <form>
-        <div class="form-group">
-          <label for="username">Name:</label>
-          <input type="text" class="form-control" id="username">
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email">
-        </div>
-        <div class="text-centre">
-          <button type="submit" class="btn btn-default std-button send-button">Send</button>
-        </div>
-      </form>
+      {{> emailcollector}}
     </div>
   </div>
 </body>
+
+<template name="emailcollector">
+  <form>
+    <div class="form-group">
+      <label for="username">Name:</label>
+      <input type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="text-centre">
+      <button type="submit" class="btn btn-default std-button send-button">Send</button>
+    </div>
+  </form>
+</template>

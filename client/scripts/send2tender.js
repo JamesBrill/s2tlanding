@@ -1,17 +1,15 @@
+var SignUps = new Mongo.Collection("sign-ups");
+
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
-
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
-
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
+  Template.emailcollector.events({
+    'submit form': function(event) {
+      event.preventDefault();
+      let name = event.target.username.value;
+      let email = event.target.email.value;
+      SignUps.insert({
+        name: name,
+        email: email
+      });
     }
   });
 }

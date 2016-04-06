@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+  <nav style="margin-bottom: 0" class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="brand" href="#">
@@ -32,11 +32,12 @@
 
   <div class="jumbotron vertical-center">
     <div class="container text-center">
-        <h1>THE ONLINE MARKETPLACE WHERE BUYERS MEET SUPPLIERS</h1>
+        <h1 style="color: white">THE ONLINE MARKETPLACE WHERE BUYERS MEET SUPPLIERS</h1>
         <button onclick="$('.email-form').show();
                          location.href='#email-form-inner';
                          ga('send', 'event', signupType, 'click', signupType);"
-                class="btn btn-default text-center std-button">
+                style="background-color: green; border-color: green; color: white;"
+                class="btn btn-default text-center">
           SIGN UP
         </button>
     </div>
@@ -154,7 +155,8 @@
                              location.href='#email-form-inner';
                              signupType = 'basic';
                              ga('send', 'event', signupType, 'click', signupType);"
-            class="btn btn-default std-button sign-up-button">Join for free</button>
+                             style="background-color: green; border-color: green; color: white;"
+            class="btn btn-default sign-up-button">Join for free</button>
           </div>
         </div>
 
@@ -169,7 +171,8 @@
                              location.href='#email-form-inner';
                              signupType = 'pro';
                              ga('send', 'event', signupType, 'click', signupType);"
-            class="btn btn-default std-button sign-up-button">Join for £39 a month</button>
+                             style="background-color: green; border-color: green; color: white;"
+            class="btn btn-default sign-up-button">Join for £39 a month</button>
           </div>
         </div>
       </div>
@@ -187,6 +190,7 @@
 
 <template name="emailcollector">
   <form onsubmit="ga('send', 'event', signupType, 'give-email', $('#email').val());
+                  ga('send', 'event', signupType, 'give-email', $('#username').val());
                   $('#thank-you').show();">
     <div class="form-group">
       <label for="username">Name:</label>
@@ -197,7 +201,7 @@
       <input type="email" class="form-control" id="email" name="email">
     </div>
     <div class="text-centre">
-      <button type="submit" class="btn btn-default std-button send-button">Send</button>
+      <button type="submit" style="background-color: green; border-color: green; color: white;" class="btn btn-default send-button">Send</button>
       <div id="thank-you">We'll be in touch!</div>
     </div>
   </form>

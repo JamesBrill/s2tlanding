@@ -22,11 +22,6 @@
   margin-bottom: 0;
 }
 
-.jumbotron h1 {
-   color: white;
-   text-align: center;
-}
-
 .vertical-center {
   display: flex;
   align-items: center;
@@ -187,6 +182,11 @@
 
 .copy-tab {
   width: 200px;
+}
+
+.jumbotron h1 {
+   color: white;
+   text-align: center;
 }
 
 .price-plan {

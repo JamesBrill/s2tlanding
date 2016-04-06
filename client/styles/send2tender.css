@@ -258,3 +258,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+#thank-you {
+  font-weight: 600;
+  margin-top: 50px;
+  display: none;
+}

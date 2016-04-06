@@ -10,7 +10,6 @@ if (Meteor.isClient) {
         name: name,
         email: email
       });
-      alert(SignUps.find({}).fetch()[0].name);
     }
   });
 }

@@ -191,7 +191,7 @@
 <template name="emailcollector">
   <form onsubmit="if ($('#email').val() != '' && $('#username').val() != '') {
     ga('send', 'event', signupType, 'give-email', $('#email').val());
-                  ga('send', 'event', signupType, 'give-email', $('#username').val());
+                  ga('send', 'event', signupType, 'give-name', $('#username').val());
                   $('#thank-you').show();
                 }">
     <div class="form-group">

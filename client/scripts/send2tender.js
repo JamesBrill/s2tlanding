@@ -1,4 +1,4 @@
-var SignUps = new Mongo.Collection("sign-ups");
+let SignUps = new Mongo.Collection("signups");
 
 if (Meteor.isClient) {
   Template.emailcollector.events({
@@ -10,12 +10,7 @@ if (Meteor.isClient) {
         name: name,
         email: email
       });
+      alert(SignUps.find({}).fetch()[0].name);
     }
-  });
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
   });
 }
